@@ -48,7 +48,7 @@ class FirstFragment : Fragment() {
     }
 
     private  fun onClick(position: Int){
-findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(R.id.tx_status, R.id.character_name))
+    findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(R.id.tx_status, R.id.character_name))
 
     }
 }
