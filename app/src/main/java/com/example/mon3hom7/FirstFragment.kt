@@ -48,12 +48,7 @@ class FirstFragment : Fragment() {
     }
 
     private  fun onClick(position: Int){
-
-        findNavController().navigate(R.id.secondFragment, bundleOf(
-            USER to R.id.character_name, STATUS to R.id.tx_status,
-
-            IMAGE to R.id.iv_characters))
-
+findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(R.id.tx_status, R.id.character_name))
 
     }
 }
